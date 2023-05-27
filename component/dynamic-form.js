@@ -1,8 +1,8 @@
-import { Input, Select, Checkbox, Button, message, Form, Card } from "antd";
+import { Input, Select, Checkbox, Button, Form, Card } from "antd";
 import axios from "axios";
 
 const { Meta } = Card;
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const countries = [
   { label: "Pakistan", value: "Pakistan" },

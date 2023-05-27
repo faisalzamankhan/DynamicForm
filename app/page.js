@@ -1,5 +1,4 @@
 "use client";
-import { array } from "yup";
 import Stepper from "../component/forms";
 import axios from "axios";
 import { useEffect, useState } from "react";
