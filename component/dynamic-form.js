@@ -30,14 +30,14 @@ const DynamicForm = ({ steps, length, next, current, prev }) => {
       });
     });
     console.log(dataObject);
-    try {
-      const response = await axios.post(
-        "https://webhook.site/f75a76cd-d422-4b54-aa80-64be653b2d64",
-        dataObject
-      );
-    } catch (error) {
-      console.log(error);
-    }
+    // try {
+    //   const response = await axios.post(
+    //     "https://webhook.site/f75a76cd-d422-4b54-aa80-64be653b2d64",
+    //     dataObject
+    //   );
+    // } catch (error) {
+    //   console.log(error);
+    // }
   };
 
   return (
