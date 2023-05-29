@@ -4,21 +4,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const Forms = () => {
-  const object = {
-    id: 4,
-    form: 4,
-    step_number: 4,
-    name: "Finshed",
-    description: "This is Step 4",
-    fields: [
-      {
-        id: 1,
-        step: 1,
-        field_type: "finshed",
-      },
-    ],
-  };
   const [data, setData] = useState();
+  const [example, setExample] = useState();
 
   const fetchData = async () => {
     try {
@@ -34,7 +21,7 @@ const Forms = () => {
       setData({
         ...response.data,
         steps: [
-          ...response.data.steps,
+          ...response.data[0].steps,
           {
             id: 4,
             form: 4,
